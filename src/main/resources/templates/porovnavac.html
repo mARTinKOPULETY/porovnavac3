@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="styl.css" type="text/css" />
+    <title>POROVNÁVAČ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body class="centr">
+    <header><h1>POROVNÁVAČ ČÍSEL</h1></header>
+    <form action="#" th:action="@{/porovnavac}" th:object="${porovnavac}" method="post">
+       První číslo: &#160;<input class="pole" type="text" th:field="*{cislo1}" /><br />
+
+        Druhé číslo: <input class="pole" type="text" th:field="*{cislo2}" /><br />
+
+        <span> <input   class="porovnej"   type="submit" value="Porovnej" /> <input class="porovnej" type="reset" value="Reset" /></span>
+    </form>
+</body>
+</html>

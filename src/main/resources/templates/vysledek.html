@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="styl.css" type="text/css" />
+    <title>Výsledek</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <header>
+        <h1>POROVNÁVAČ ČÍSEL</h1>
+    </header>
+
+    <section >
+
+        <h4 th:text="'Výsledek: ' + ${formularPorovnavace.vysledek}" ></h4>
+        <a class="porovnej" href="/porovnavac">Zpět na  porovnávač</a>
+    </section>
+</body>
+</html>
