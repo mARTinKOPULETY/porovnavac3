@@ -1,21 +1,19 @@
 <!DOCTYPE HTML>
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css" type="text/css" />
     <title>POROVNÁVAČ</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-<body class="centr">
+<body >
     <header><h1>POROVNÁVAČ ČÍSEL</h1></header>
     <form action="#" th:action="@{/porovnavac}" th:object="${porovnavac}" method="post">
-       První číslo: &#160;<input class="pole" type="text" th:field="*{cislo1}" /><br />
-
-        Druhé číslo: <input class="pole" type="text" th:field="*{cislo2}" /><br />
-
-        <span> <input   class="porovnej"   type="submit" value="Porovnej" />
-                <a class="porovnej" href="/porovnavac">Zpět na  porovnávač</a>
-                <a class="porovnej" href="https://www.martinkopulety.cz" target="_blank" >Zpět na web</a>
-        </span>
-    </form>
+       První číslo: <br/><input class="pole" type="text" th:field="*{cislo1}" /><br />
+        Druhé číslo: <br/><input class="pole" type="text" th:field="*{cislo2}" /><br />
+        <div id="menu"> <input   class="porovnej"   type="submit" value="Porovnej" /><br/>
+            <input id="reset" class="porovnej" type="reset" value="Reset" />
+            </div>
+    </form>  <a  class="porovnej" href="https://www.martinkopulety.cz/mojePrace.html" target="_blank" >Zpět&#160;na&#160;web</a><
 </body>
 </html>
