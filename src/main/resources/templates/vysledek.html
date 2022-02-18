@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css" type="text/css" />
     <title>Výsledek</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -9,12 +10,10 @@
     <header>
         <h1>POROVNÁVAČ ČÍSEL</h1>
     </header>
-
     <section >
-
-        <h4 th:text="'Výsledek: ' + ${formularPorovnavace.vysledek}" ></h4>
-        <a class="porovnej" href="/porovnavac">Zpět na  porovnávač</a>
-        <a class="porovnej" href="https://www.martinkopulety.cz" target="_blank" >Zpět na web</a>
+        <h4 th:text="'Výsledek: ' + ${formularPorovnavace.vysledek}" ></h4>      
+        <a class="porovnej" href="/porovnavac">Zpět na  porovnávač</a><br/>        
     </section>
+        <a class="porovnej" href="https://www.martinkopulety.cz/mojePrace.html" target="_blank" >Zpět na web</a> 
 </body>
 </html>
